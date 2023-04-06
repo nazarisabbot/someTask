@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <script defer src="task_01.js"></script>
+  <script defer src="task_02.js"></script>
+  <script defer src="task_03.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <form class="form" method="GET">
+      <fieldset class="form__body form__body_first">
+        <legend class="form__title">Task 01</legend>
+        <label class="form__label" for="euro">Введите стоиомсть товара в ЕВРО пожалуйста</label>
+        <input class="form__input" id="euro" type="number">
+
+        <button class="form__button" id="button01" type="button">Перевести</button>
+
+        <div class="form__answer">
+          <p class="form__paragraph" id="answer01"></p>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__body form__body_second">
+        <legend class="form__title">Task 02</legend>
+        <label class="form__label" for="euro">Введите текст пожалуйста</label>
+        <input class="form__input" id="text" type="text">
+
+        <button class="form__button" id="button02" type="button">Перевести</button>
+
+        <div class="form__answer">
+          <p class="form__paragraph" id="answer02"></p>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__body form__body_third">
+        <legend class="form__title">Task 03</legend>
+        <label class="form__label" for="invoice">Введите данные корзины пожалуйста</label>
+        <input class="form__input" id="invoice" type="number" placeholder="Общая сумма корзины">
+
+        <label class="form__label" for="quantity">Укажите количество товаров в корзине пожалуйста</label>
+        <select class="form__select" name="quantity" id="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+
+        <label class="form__label" for="promocode">Укажите промокод</label>
+        <select class="form__select" name="promocode" id="promocode">
+          <option value="METHED">METHED</option>
+          <option value="G3H2Z1">G3H2Z1</option>
+        </select>
+
+        <button class="form__button" id="button03" type="button">Просчитать скидку</button>
+
+        <div class="form__answer">
+          <p class="form__paragraph" id="answer03"></p>
+        </div>
+      </fieldset>
+    </form>
+
+  </div>
+</body>
+
+</html>
